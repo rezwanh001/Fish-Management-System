@@ -1,0 +1,968 @@
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+You need to login first..
+Enter your userid and password..
+Enter value for userid: REZWAN
+old   6: 	u1:='&userid';
+new   6: 	u1:='REZWAN';
+Enter value for password: 1407028
+old   7: 	p1:=&password;
+new   7: 	p1:=1407028;
+Log in successful                                                               
+
+PL/SQL procedure successfully completed.
+
+Press ENTER to continue ...
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ F_NAME                                             VARCHAR2(15)
+ F_PRICE                                            NUMBER(9,3)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ B_ID                                      NOT NULL NUMBER(9)
+ B_NAME                                             VARCHAR2(15)
+ F_NAME                                             VARCHAR2(15)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ O_ID                                      NOT NULL NUMBER(9)
+ O_NAME                                             VARCHAR2(15)
+ PROFIT                                             NUMBER(9,3)
+ LOSS                                               NUMBER(9,3)
+ B_ID                                      NOT NULL NUMBER(9)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ P_ID                                      NOT NULL NUMBER(9)
+ NUMBER_EMP                                         NUMBER(9)
+ FOODS                                              VARCHAR2(15)
+ COST                                               NUMBER(9,3)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ O_ID                                      NOT NULL NUMBER(9)
+
+
+F_GRADE         F_NAME             F_PRICE                                      
+--------------- --------------- ----------                                      
+small           prawn                15.25                                      
+medium          rui                   75.5                                      
+large           katla                95.25                                      
+
+
+      B_ID B_NAME          F_NAME          F_GRADE                              
+---------- --------------- --------------- ---------------                      
+         1 Abul            prawn           small                                
+         2 Babul           rui             medium                               
+         3 Kabul           katla           large                                
+
+
+      O_ID O_NAME              PROFIT       LOSS       B_ID                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz               5000.5          0          1                     
+         2 Tofiz                    0     500.25          2                     
+         3 Nasser                   0        125          3                     
+
+
+      P_ID NUMBER_EMP FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         2          9 TetraFin           5200.58 medium                   2     
+         3         15 TetraMin           6000.25 large                    3     
+
+
+Table altered.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ P_ID                                      NOT NULL NUMBER(9)
+ EMP_NUMBER                                         NUMBER(9)
+ FOODS                                              VARCHAR2(15)
+ COST                                               NUMBER(9,3)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ O_ID                                      NOT NULL NUMBER(9)
+
+
+Table altered.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ F_NAME                                             VARCHAR2(10)
+ F_PRICE                                            NUMBER(9,3)
+
+
+1 row deleted.
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+
+
+      B_ID B_NAME          F_NAME          F_GRADE                              
+---------- --------------- --------------- ---------------                      
+         1 Abul            prawn           small                                
+         3 Kabul           katla           large                                
+
+
+      O_ID O_NAME              PROFIT       LOSS       B_ID                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz               5000.5          0          1                     
+         3 Nasser                   0        125          3                     
+
+
+      P_ID EMP_NUMBER FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         3         15 TetraMin           6000.25 large                    3     
+
+
+1 row updated.
+
+
+      O_ID O_NAME              PROFIT       LOSS       B_ID                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz               5000.5          0          1                     
+         3 Nasser                 125          0          3                     
+
+
+Table altered.
+
+
+      O_ID O_NAME              PROFIT       B_ID                                
+---------- --------------- ---------- ----------                                
+         1 Mofiz               5000.5          1                                
+         3 Nasser                 125          3                                
+
+
+Table altered.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ O_ID                                      NOT NULL NUMBER(9)
+ O_NAME                                             VARCHAR2(15)
+ PROFIT                                             NUMBER(9,3)
+ B_ID                                      NOT NULL NUMBER(9)
+ LOSS                                               NUMBER(5,3)
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz               5000.5          1                                
+         3 Nasser                 125          3                                
+
+
+   F_PRICE                                                                      
+----------                                                                      
+     15.25                                                                      
+      75.5                                                                      
+     95.25                                                                      
+
+
+MAX(F_PRICE)                                                                    
+------------                                                                    
+       95.25                                                                    
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ O_ID                                      NOT NULL NUMBER(9)
+ O_NAME                                             VARCHAR2(15)
+ PROFIT                                             NUMBER(9,3)
+ B_ID                                      NOT NULL NUMBER(9)
+ LOSS                                               NUMBER(5,3)
+
+
+  COUNT(*) COUNT(PROFIT)                                                        
+---------- -------------                                                        
+         2             2                                                        
+
+
+      B_ID                                                                      
+----------                                                                      
+         1                                                                      
+         3                                                                      
+
+
+      LOSS                                                                      
+----------                                                                      
+                                                                                
+                                                                                
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+
+
+      B_ID B_NAME          F_NAME          F_GRADE                              
+---------- --------------- --------------- ---------------                      
+         1 Abul            prawn           small                                
+         3 Kabul           katla           large                                
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz               5000.5          1                                
+         3 Nasser                 125          3                                
+
+
+      P_ID EMP_NUMBER FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         3         15 TetraMin           6000.25 large                    3     
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         3 Nasser               125.5          3          0                     
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ O_ID                                      NOT NULL NUMBER(9)
+ O_NAME                                             VARCHAR2(15)
+ PROFIT                                             NUMBER(9,3)
+ B_ID                                      NOT NULL NUMBER(9)
+ LOSS                                               NUMBER(5,3)
+
+
+  COUNT(*) COUNT(PROFIT)                                                        
+---------- -------------                                                        
+         2             2                                                        
+
+
+  COUNT(*) SUM(PROFIT)  AVG(LOSS)                                               
+---------- ----------- ----------                                               
+         2       125.5       5.25                                               
+
+
+AVG(NVL(LOSS,0))                                                                
+----------------                                                                
+            5.25                                                                
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ P_ID                                      NOT NULL NUMBER(9)
+ EMP_NUMBER                                         NUMBER(9)
+ FOODS                                              VARCHAR2(15)
+ COST                                               NUMBER(9,3)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ O_ID                                      NOT NULL NUMBER(9)
+
+
+      P_ID EMP_NUMBER FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         3         15 TetraMin           6000.25 large                    3     
+
+
+COUNT(EMP_NUMBER) COUNT(DISTINCTEMP_NUMBER) COUNT(ALLEMP_NUMBER)                
+----------------- ------------------------- --------------------                
+                2                         2                    2                
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ F_NAME                                             VARCHAR2(10)
+ F_PRICE                                            NUMBER(9,3)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ B_ID                                      NOT NULL NUMBER(9)
+ B_NAME                                             VARCHAR2(15)
+ F_NAME                                             VARCHAR2(15)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ O_ID                                      NOT NULL NUMBER(9)
+ O_NAME                                             VARCHAR2(15)
+ PROFIT                                             NUMBER(9,3)
+ B_ID                                      NOT NULL NUMBER(9)
+ LOSS                                               NUMBER(5,3)
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ P_ID                                      NOT NULL NUMBER(9)
+ EMP_NUMBER                                         NUMBER(9)
+ FOODS                                              VARCHAR2(15)
+ COST                                               NUMBER(9,3)
+ F_GRADE                                   NOT NULL VARCHAR2(15)
+ O_ID                                      NOT NULL NUMBER(9)
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+Ssmall          Pangash         35.25                                           
+Mmedium         Elish           125.5                                           
+Llarge          SilverCup       45.25                                           
+
+6 rows selected.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+      B_ID B_NAME          F_NAME          F_GRADE                              
+---------- --------------- --------------- ---------------                      
+         1 Abul            prawn           small                                
+         3 Kabul           katla           large                                
+         4 AAbul           Pangash         Ssmall                               
+         5 BBabul          Elish           Mmedium                              
+         6 BKabul          SilverCup       Llarge                               
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+      P_ID EMP_NUMBER FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         3         15 TetraMin           6000.25 large                    3     
+         4         19 TTetraCichlid      5200.58 Ssmall                   4     
+         5         23 TTetraFin          6200.58 Mmedium                  5     
+         6         11 TTetraMin          7000.25 Llarge                   6     
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+Ssmall          Pangash         35.25                                           
+Mmedium         Elish           125.5                                           
+Llarge          SilverCup       45.25                                           
+
+6 rows selected.
+
+
+      B_ID B_NAME          F_NAME          F_GRADE                              
+---------- --------------- --------------- ---------------                      
+         1 Abul            prawn           small                                
+         3 Kabul           katla           large                                
+         4 AAbul           Pangash         Ssmall                               
+         5 BBabul          Elish           Mmedium                              
+         6 BKabul          SilverCup       Llarge                               
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+
+
+      P_ID EMP_NUMBER FOODS                 COST F_GRADE               O_ID     
+---------- ---------- --------------- ---------- --------------- ----------     
+         1         12 TetraCichlid       5252.58 small                    1     
+         3         15 TetraMin           6000.25 large                    3     
+         4         19 TTetraCichlid      5200.58 Ssmall                   4     
+         5         23 TTetraFin          6200.58 Mmedium                  5     
+         6         11 TTetraMin          7000.25 Llarge                   6     
+
+
+      COST COUNT(COST)                                                          
+---------- -----------                                                          
+   7000.25           1                                                          
+   6000.25           1                                                          
+   5200.58           1                                                          
+   5252.58           1                                                          
+   6200.58           1                                                          
+
+
+      COST COUNT(COST)                                                          
+---------- -----------                                                          
+   5200.58           1                                                          
+   6200.58           1                                                          
+
+
+      COST COUNT(COST)                                                          
+---------- -----------                                                          
+   7000.25           1                                                          
+   6000.25           1                                                          
+   5200.58           1                                                          
+   5252.58           1                                                          
+   6200.58           1                                                          
+
+
+      COST                                                                      
+----------                                                                      
+   7000.25                                                                      
+   6000.25                                                                      
+   5200.58                                                                      
+   5252.58                                                                      
+   6200.58                                                                      
+
+
+      B_ID B_NAME                                                               
+---------- ---------------                                                      
+         4 AAbul                                                                
+         6 BKabul                                                               
+
+
+      B_ID B_NAME                                                               
+---------- ---------------                                                      
+         5 BBabul                                                               
+
+
+      P_ID FOODS                                                                
+---------- ---------------                                                      
+         3 TetraMin                                                             
+         4 TTetraCichlid                                                        
+         5 TTetraFin                                                            
+         6 TTetraMin                                                            
+
+
+      P_ID FOODS                                                                
+---------- ---------------                                                      
+         1 TetraCichlid                                                         
+         3 TetraMin                                                             
+         5 TTetraFin                                                            
+
+
+      P_ID FOODS                                                                
+---------- ---------------                                                      
+         1 TetraCichlid                                                         
+
+
+      P_ID FOODS                                                                
+---------- ---------------                                                      
+         6 TTetraMin                                                            
+
+
+      B_ID B_NAME          O_NAME                                               
+---------- --------------- ---------------                                      
+         1 Abul            Mofiz                                                
+         3 Kabul           Nasser                                               
+         4 AAbul           MMofiz                                               
+         5 BBabul          TTofiz                                               
+         6 BKabul          NNasser                                              
+
+
+      B_ID B_NAME              PROFIT                                           
+---------- --------------- ----------                                           
+         1 Abul                     0                                           
+         3 Kabul                125.5                                           
+         4 AAbul               5000.5                                           
+         5 BBabul                   0                                           
+         6 BKabul                   0                                           
+
+
+B_NAME              PROFIT                                                      
+--------------- ----------                                                      
+Abul                     0                                                      
+Kabul                125.5                                                      
+AAbul               5000.5                                                      
+BBabul                   0                                                      
+BKabul                   0                                                      
+
+
+B_NAME              PROFIT                                                      
+--------------- ----------                                                      
+Abul                     0                                                      
+Kabul                125.5                                                      
+AAbul               5000.5                                                      
+BBabul                   0                                                      
+BKabul                   0                                                      
+
+
+B_NAME          O_NAME                                                          
+--------------- ---------------                                                 
+Abul            Mofiz                                                           
+Kabul           Nasser                                                          
+AAbul           MMofiz                                                          
+BBabul          TTofiz                                                          
+BKabul          NNasser                                                         
+
+
+F_NAME     B_NAME                                                               
+---------- ---------------                                                      
+prawn      Abul                                                                 
+katla      Kabul                                                                
+Pangash    AAbul                                                                
+Elish      BBabul                                                               
+SilverCup  BKabul                                                               
+
+
+F_NAME          B_NAME                                                          
+--------------- ---------------                                                 
+prawn           Abul                                                            
+katla           Kabul                                                           
+Pangash         AAbul                                                           
+Elish           BBabul                                                          
+SilverCup       BKabul                                                          
+
+
+B_NAME              PROFIT                                                      
+--------------- ----------                                                      
+Abul                     0                                                      
+Kabul                    0                                                      
+AAbul                    0                                                      
+BBabul                   0                                                      
+BKabul                   0                                                      
+Abul                5000.5                                                      
+Kabul               5000.5                                                      
+AAbul               5000.5                                                      
+BBabul              5000.5                                                      
+BKabul              5000.5                                                      
+Abul                 125.5                                                      
+
+B_NAME              PROFIT                                                      
+--------------- ----------                                                      
+Kabul                125.5                                                      
+AAbul                125.5                                                      
+BBabul               125.5                                                      
+BKabul               125.5                                                      
+Abul                     0                                                      
+Kabul                    0                                                      
+AAbul                    0                                                      
+BBabul                   0                                                      
+BKabul                   0                                                      
+Abul                     0                                                      
+Kabul                    0                                                      
+
+B_NAME              PROFIT                                                      
+--------------- ----------                                                      
+AAbul                    0                                                      
+BBabul                   0                                                      
+BKabul                   0                                                      
+
+25 rows selected.
+
+
+B_NAME          O_NAME                                                          
+--------------- ---------------                                                 
+Abul            Mofiz                                                           
+AAbul           MMofiz                                                          
+Kabul           Nasser                                                          
+BBabul          TTofiz                                                          
+BKabul          NNasser                                                         
+
+
+      B_ID B_NAME          O_NAME                                               
+---------- --------------- ---------------                                      
+         1 Abul            Mofiz                                                
+         4 AAbul           MMofiz                                               
+         3 Kabul           Nasser                                               
+         5 BBabul          TTofiz                                               
+         6 BKabul          NNasser                                              
+
+
+      B_ID B_NAME          O_NAME                                               
+---------- --------------- ---------------                                      
+         1 Abul            Mofiz                                                
+         3 Kabul           Nasser                                               
+         4 AAbul           MMofiz                                               
+         5 BBabul          TTofiz                                               
+         6 BKabul          NNasser                                              
+
+
+      B_ID B_NAME          O_NAME                                               
+---------- --------------- ---------------                                      
+         1 Abul            Mofiz                                                
+         4 AAbul           MMofiz                                               
+         3 Kabul           Nasser                                               
+         5 BBabul          TTofiz                                               
+         6 BKabul          NNasser                                              
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+Grade : small,  Name : prawn,  Price : 15.25                                    
+
+PL/SQL procedure successfully completed.
+
+Maximum Owner: 7                                                                
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+Ssmall          Pangash         35.25                                           
+Mmedium         Elish           125.5                                           
+Llarge          SilverCup       45.25                                           
+Very small      Pangash         15.25                                           
+SoSmall         Mi-Cup           12.3                                           
+
+8 rows selected.
+
+Fish Grade: small   Fish Name: prawn                                            
+Fish Grade: medium   Fish Name: rui                                             
+Fish Grade: large   Fish Name: katla                                            
+Fish Grade: Ssmall   Fish Name: Pangash                                         
+Fish Grade: Mmedium   Fish Name: Elish                                          
+Fish Grade: Llarge   Fish Name: SilverCup                                       
+
+PL/SQL procedure successfully completed.
+
+
+Procedure created.
+
+No errors.
+Name : Mofiz                                                                    
+
+PL/SQL procedure successfully completed.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+         7 Mofiz               2050.5          4          0                     
+
+6 rows selected.
+
+
+Procedure created.
+
+No errors.
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+         7 Mofiz               2050.5          4          0                     
+
+6 rows selected.
+
+
+Function created.
+
+Average Loss: 12.292                                                            
+
+PL/SQL procedure successfully completed.
+
+
+Function created.
+
+Total Loss: 73.75                                                               
+
+PL/SQL procedure successfully completed.
+
+
+Function created.
+
+
+      O_ID O_NAME          Annual Loss                                          
+---------- --------------- -----------                                          
+         3 Nasser                 1506                                          
+
+
+Trigger created.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+         7 Mofiz               2050.5          4          0                     
+
+6 rows selected.
+
+New Profit : 1250                                                               
+
+1 row created.
+
+
+    PROFIT                                                                      
+----------                                                                      
+         0                                                                      
+    5000.5                                                                      
+     125.5                                                                      
+         0                                                                      
+         0                                                                      
+    2050.5                                                                      
+      1250                                                                      
+
+7 rows selected.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+         7 Mofiz               2050.5          4          0                     
+         8 John                  1250          7          0                     
+
+7 rows selected.
+
+
+Rollback complete.
+
+
+      O_ID O_NAME              PROFIT       B_ID       LOSS                     
+---------- --------------- ---------- ---------- ----------                     
+         1 Mofiz                    0          1       10.5                     
+         4 MMofiz              5000.5          4          0                     
+         3 Nasser               125.5          3          0                     
+         5 TTofiz                   0          5      50.25                     
+         6 NNasser                  0          6         13                     
+         7 Mofiz               2050.5          4          0                     
+
+6 rows selected.
+
+
+Procedure created.
+
+No errors.
+User added successfully                                                         
+
+PL/SQL procedure successfully completed.
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+Ssmall          Pangash         35.25                                           
+Mmedium         Elish           125.5                                           
+Llarge          SilverCup       45.25                                           
+Very small      Pangash         15.25                                           
+SoSmall         Mi-Cup           12.3                                           
+Very Large      Pangash         55.25                                           
+
+9 rows selected.
+
+
+Savepoint created.
+
+User added successfully                                                         
+
+PL/SQL procedure successfully completed.
+
+
+F_GRADE         F_NAME        F_PRICE                                           
+--------------- ---------- ----------                                           
+small           prawn           15.25                                           
+medium          rui              75.5                                           
+large           katla           95.25                                           
+Ssmall          Pangash         35.25                                           
+Mmedium         Elish           125.5                                           
+Llarge          SilverCup       45.25                                           
+Very small      Pangash         15.25                                           
+SoSmall         Mi-Cup           12.3                                           
+Very Large      Pangash         55.25                                           
+Very Very Large Pangash        127.25                                           
+
+10 rows selected.
+
+
+Rollback complete.
+
+
+Rollback complete.
+
+
+SYSDATE                                                                         
+---------                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+
+8 rows selected.
+
+
+CURRENT_D                                                                       
+---------                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+05-JUL-17                                                                       
+
+6 rows selected.
+
+
+SYSTIMESTAMP                                                                    
+---------------------------------------------------------------------------     
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+05-JUL-17 03.47.37.032000 PM +06:00                                             
+
+8 rows selected.
+
+
+B_NAME          O_NAME                                                          
+--------------- ---------------                                                 
+Abul            Mofiz                                                           
+Kabul           Nasser                                                          
+AAbul           MMofiz                                                          
+BBabul          TTofiz                                                          
+BKabul          NNasser                                                         
+Abul            Mofiz                                                           
+
+6 rows selected.
+
